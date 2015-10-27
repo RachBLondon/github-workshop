@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>GitHub Workshop</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>GitHub Workshop</title>
+</head>
+
+<body>
+  <a href=https://github.com/login/oauth/authorize?client_id=3704f4fe34f8b65350b3>DANGER!!! USERS MUST LOGIN TO CONTINUE</a>
+  <form id="userForm">
+    <input type="text" id="username" value="" placeholder="Username">
+    <input type="text" id="password" value="" placeholder="password">
+    <input type="text" id="issueTitle" value="" placeholder="Issue Title">
+    <input type="text" id="issueText" value="" placeholder="Issue Text">
+    <input type="submit" id="postIssue" value="submit">
+  </form>
+  <script type="text/javascript">
+    document.getElementById('userForm').addEventListener("submit", function(e) {
+      e.preventDefault();
+      console.log("submit clicked");
+
+      var out = new XMLHttpRequest();
+      out.open("GET" )
+    })
+  </script>
+</body>
+
 </html>
